@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>org.ayakaji</groupId>
+	<artifactId>SpringBootProber</artifactId>
+	<version>0.0.4-SNAPSHOT</version>
+	<name>prjSprBotProber</name>
+	<description>Prober of Spring Boot Version</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.bluecatcode.time</groupId>
+			<artifactId>joda-time-2.9.1-extended</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.60</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.icecooly</groupId>
+			<artifactId>FastHttpClient</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei</groupId>
+			<artifactId>huawei-boss-common-icrm</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei</groupId>
+			<artifactId>huawei-wlclient</artifactId>
+			<version>10.3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei</groupId>
+			<artifactId>huawei-struts</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm</groupId>
+			<artifactId>ibm-ctgclient</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei</groupId>
+			<artifactId>huawei-comons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei</groupId>
+			<artifactId>huawei-common</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
