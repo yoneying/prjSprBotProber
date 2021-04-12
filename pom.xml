@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.ayakaji</groupId>
 	<artifactId>SpringBootProber</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<name>prjSprBotProber</name>
 	<description>Prober of Spring Boot Version</description>
 

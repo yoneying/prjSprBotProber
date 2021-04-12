@@ -31,7 +31,7 @@ public class IOPProber {
 							+ "acHal</xsd:channelType><xsd:field></xsd:field><xsd:msisdn>" + jsonObj.getString("USERID")
 							+ "</xsd:msisdn"
 							+ "><xsd:requestHeader><xsd1:accessChannel>bsacHal</xsd1:accessChannel><xsd1:beId>101</xsd1:beId><xsd1:langu"
-							+ "age>2</xsd1:language><xsd1:operator>Campaign</xsd1:operator><xsd1:password>q3geiItxj4ljNLkI6OINDA==</xsd1"
+							+ "age>2</xsd1:language><xsd1:operator>Campaign</xsd1:operator><xsd1:password>" + jsonObj.getString("PASSWD") + "</xsd1"
 							+ ":password><xsd1:transactionId>1</xsd1:transactionId><xsd1:version></xsd1:version></xsd:requestHeader><xsd"
 							+ ":type>M</xsd:type></att:args0></att:queryUserAttrsService></soap:Body></soap:Envelope>")
 					.url("http://" + jsonObj.getString("HOST") + ":" + jsonObj.getString("PORT")
