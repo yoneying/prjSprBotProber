@@ -35,7 +35,7 @@ public class IOPProber {
 							+ ":password><xsd1:transactionId>1</xsd1:transactionId><xsd1:version></xsd1:version></xsd:requestHeader><xsd"
 							+ ":type>M</xsd:type></att:args0></att:queryUserAttrsService></soap:Body></soap:Envelope>")
 					.url("http://" + jsonObj.getString("HOST") + ":" + jsonObj.getString("PORT")
-							+ "/pc/services/CUserAttrQueryService")
+							+ "/ckmservice/services/CUserAttrQueryService")
 					.build().execute();
 			String respTxt = resp.string();
 			if (respTxt.indexOf("<xsd:resultMessage>查询成功.</xsd:resultMessage>") != -1) {
